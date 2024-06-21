@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+form input, form textarea {
+    width: 25%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+
+    background-color: #218838;
+
+}
+
+h1 { text-align: center;
+font-family: Arial, Helvetica, sans-serif}
+
+
+.container :hover { 
+    background-color: #cf759a }
+
+    @media all and (max-width: 800px) 
+
+	 {
+		.container 
+		{ justify-content: space-evenly;}
+	}
+		
+		
+	@media all and (max-width: 600px) { 
+
+	.container 
+	{ flex-direction: column;}
+	h3 {text-align: center;}
+	.container a {border: 1px solid RGBA(200,255,255,0.25);}
+
+		} 
+	h2 {padding-left: 10px; }
+    p {padding: 10px }
+    
+    #studypic {
+
+            background-image: url("https://admission.princeton.edu/sites/default/files/images/Firestone_lights.jpeg");
+        
+            background-repeat: no-repeat;
+            height: 250px;
+            background-size: contain;
+            background-position: right center;
+            float: left;
+            padding-left: 30px;
+    }
+    
+    #study { 
+        padding: 10px;
+    }
+    #dorms { 
+        padding: 10px;
+    }
+    #food { 
+        padding: 10px;
+    }
+
+    header,footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .container {
+        list-style: none;
+        padding: 0;
+        background-color: #333;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .dropbtn {
+        background-color: #3498DB;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #2980B9;
+      }
+      
+    
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+    
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .show {display:block;}
+
+     

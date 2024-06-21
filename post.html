@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="post.js"></script>
+  <link rel="stylesheet" href="post.css"> 
+  <title>Posts Here!!</title>
+  <style>
+    .post {
+      border: 1px solid #000;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+  <div id="vikes"></div>
+</head>
+<body>
+  <div class="container">
+    <div class="part">
+      <h3>Create a New Post</h3>
+      <form id="postForm" onsubmit="submitPost(); return false;">
+        <label for="postTitle">Title:</label><br>
+        <input type="text" id="postTitle" name="postTitle" required><br>
+        <label for="postContent">Content:</label><br>
+        <textarea id="postContent" name="postContent" required></textarea><br>
+        <label for="postAuthor">Author:</label><br>
+        <input type="text" id="postAuthor" name="postAuthor" required><br>
+        <button type="submit">Submit Post</button>
+      </form>
+    </div>
+      
+      </div>
+    </form>
+  </div>
+
+  <h3>Posts</h3>
+  <div id="postsSection">
+    <!-- New posts will be added here -->
+  </div>
+
+</body>
+<div class="container">
+  <div class="post">
+    
+<html>

@@ -1,0 +1,189 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f9;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', Helvetica, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    color: #333;
+}
+
+h2, h3 {
+    padding: 10px;
+    margin: 0;
+    color: #555;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        justify-content: space-evenly;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    h3 {
+        text-align: center;
+    }
+    .container a {
+        border: 1px solid rgba(200, 255, 255, 0.25);
+    }
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.section-content {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+#studypic, #dormpic, #foodpic {
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    border-radius: 8px;
+}
+
+#studypic {
+    background-image: url("https://www.stantec.com/content/dam/stantec/images/ideas/blogs/009/what-makes-successful-study-space-academic-building-2.jpg.transform/small/image.20200421.jpeg");
+}
+
+#dormpic {
+    background-image: url("https://d2rxt25e475whq.cloudfront.net/wp-content/uploads/2023/10/AdobeStock_632194401-962x500.jpeg");
+}
+
+#foodpic {
+    background-image: url("https://wfuogb.com/wp-content/uploads/2023/04/northdining-dining.jpeg");
+}
+
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
